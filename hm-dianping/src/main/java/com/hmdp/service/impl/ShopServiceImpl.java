@@ -67,7 +67,7 @@ public class ShopServiceImpl extends ServiceImpl<ShopMapper, Shop> implements IS
 //                 .queryWithLogicalExpire(RedisConstants.CACHE_SHOP_KEY, id, Shop.class, this::getById, 20L, TimeUnit.SECONDS);
 
         if (shop == null) {
-            return Result.fail("店铺不存在");
+            return Result.fail("店铺不存在！");
         }
         //返回
         return Result.ok(shop);

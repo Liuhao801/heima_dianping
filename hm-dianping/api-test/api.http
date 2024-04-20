@@ -1,0 +1,31 @@
+###
+PUT http://localhost:8081/shop
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "101茶餐厅"
+}
+
+
+###
+POST http://localhost:8081/voucher/seckill
+Content-Type: application/json
+
+{
+  "id": 2,
+  "actualValue": 10000,
+  "payValue": 5000,
+  "rules": "全场通用\\n无需预约\\n可无限叠加\\不兑现、不找零\\n仅限堂食",
+  "shopId": 1,
+  "subTitle": "周一至周日均可使用",
+  "title": "50元代金券",
+  "type": 1,
+  "stock": 100,
+  "beginTime": "2023-04-20T12:00:00",
+  "endTime": "2025-04-20T13:00:00"
+}
+
+###
+POST http://localhost:8081/voucher-order/seckill/12
+authorization:dca9b94c754546bbb5f2e1d754f645cc
