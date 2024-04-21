@@ -27,5 +27,9 @@ Content-Type: application/json
 }
 
 ###
-POST http://localhost:8081/voucher-order/seckill/12
-authorization:dca9b94c754546bbb5f2e1d754f645cc
+POST http://localhost:8081/voucher-order/seckill/13
+authorization:869b50d2b52e4899980905f5ea5cf62b
+
+###
+POST http://localhost:8082/voucher-order/seckill/13
+authorization:869b50d2b52e4899980905f5ea5cf62b
