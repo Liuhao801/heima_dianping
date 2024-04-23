@@ -29,7 +29,7 @@ public class SimpleRedisLock implements ILock{
         this.stringRedisTemplate = stringRedisTemplate;
     }
 
-    public boolean tyrLock(long timeoutSec) {
+    public boolean tryLock(long timeoutSec) {
         //当前线程标识
         String threadId = ID_PREFIX + Thread.currentThread().getId();
         Boolean success = stringRedisTemplate.opsForValue()

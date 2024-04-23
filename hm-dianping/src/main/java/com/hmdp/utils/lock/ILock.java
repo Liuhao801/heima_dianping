@@ -7,7 +7,7 @@ public interface ILock {
      * @param timeoutSec 锁持有的超时时间，超时自动释放
      * @return true表示获取锁成功，false表示获取失败
      */
-    boolean tyrLock(long timeoutSec);
+    boolean tryLock(long timeoutSec);
 
     /**
      * 释放锁

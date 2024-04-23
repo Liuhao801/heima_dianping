@@ -13,11 +13,10 @@ POST http://localhost:8081/voucher/seckill
 Content-Type: application/json
 
 {
-  "id": 2,
   "actualValue": 10000,
   "payValue": 5000,
   "rules": "全场通用\\n无需预约\\n可无限叠加\\不兑现、不找零\\n仅限堂食",
-  "shopId": 1,
+  "shopId": 2,
   "subTitle": "周一至周日均可使用",
   "title": "50元代金券",
   "type": 1,
@@ -28,7 +27,7 @@ Content-Type: application/json
 
 ###
 POST http://localhost:8081/voucher-order/seckill/13
-authorization:869b50d2b52e4899980905f5ea5cf62b
+authorization:3f82ccfb9e704f149af3a4e9f1d70ee8
 
 ###
 POST http://localhost:8082/voucher-order/seckill/13
