@@ -32,3 +32,11 @@ authorization:3f82ccfb9e704f149af3a4e9f1d70ee8
 ###
 POST http://localhost:8082/voucher-order/seckill/13
 authorization:869b50d2b52e4899980905f5ea5cf62b
+
+###
+POST http://localhost:8081/user/sign
+authorization:2a7e29f7a09541489c1dd98827903015
+
+###
+GET http://localhost:8081/user/sign/count
+authorization:2a7e29f7a09541489c1dd98827903015
